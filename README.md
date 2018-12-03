@@ -1,8 +1,8 @@
-## Next Routes Middleware
+## Now Dev CLI
 
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.0.1&x2=0)](https://www.npmjs.com/package/now-dev-cli)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.0.2&x2=0)](https://www.npmjs.com/package/now-dev-cli)
 
-Universal, Extensible, customizable Next.JS routes middleware
+A development server for Now V2 (for NextJS applications)
 
 ## Installation
 
@@ -76,27 +76,37 @@ Compiled JSON file:
     {
       "src": "/favicon.ico",
       "dest": "static/favicon.ico",
-      "method": "GET"
+      "methods": [
+        "GET"
+      ]
     },
     {
       "src": "/w/(?<first>.*)",
       "dest": "/work?slug=${first}",
-      "method": "GET"
+      "methods": [
+        "GET"
+      ]
     },
     {
       "src": "/resource/(?<uuid>[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}){1}",
       "dest": "/complex?id=${uuid}",
-      "method": "GET"
+      "methods": [
+        "GET"
+      ]
     },
     {
       "src": "/t/(?<slug>[^/]*)/(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})",
       "dest": "/more_complex?day=${day}&month=${month}&year=${year}&slug=${slug}",
-      "method": "GET"
+      "methods": [
+        "GET"
+      ]
     },
     {
       "src": "/",
       "dest": "/index",
-      "method": "GET"
+      "methods": [
+        "GET"
+      ]
     }
   ]
 }
