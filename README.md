@@ -1,6 +1,6 @@
 ## Now Dev CLI
 
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.0.2&x2=0)](https://www.npmjs.com/package/now-dev-cli)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.1.2&x2=0)](https://www.npmjs.com/package/now-dev-cli)
 
 A development server for Now V2 (for NextJS applications)
 
@@ -82,21 +82,21 @@ Compiled JSON file:
     },
     {
       "src": "/w/(?<first>.*)",
-      "dest": "/work?slug=${first}",
+      "dest": "/work?slug=$first",
       "methods": [
         "GET"
       ]
     },
     {
       "src": "/resource/(?<uuid>[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}){1}",
-      "dest": "/complex?id=${uuid}",
+      "dest": "/complex?id=$uuid",
       "methods": [
         "GET"
       ]
     },
     {
       "src": "/t/(?<slug>[^/]*)/(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})",
-      "dest": "/more_complex?day=${day}&month=${month}&year=${year}&slug=${slug}",
+      "dest": "/more_complex?day=$day&month=$month&year=$year&slug=$slug",
       "methods": [
         "GET"
       ]
