@@ -1,6 +1,6 @@
 ## Now Dev CLI
 
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.1.2&x2=0)](https://www.npmjs.com/package/now-dev-cli)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.1.3&x2=0)](https://www.npmjs.com/package/now-dev-cli)
 
 A development server for Now V2 (for NextJS applications)
 
@@ -56,6 +56,8 @@ Step 1: Create your own `now.dev.json`:
 ```
 
 Step 2: Run `now-dev` to serve your NextJS application
+
+You can also provide `-prefix <your prefix>` to produce prefixed routes in a monorepo application
 
 Compiled JSON file:
 
