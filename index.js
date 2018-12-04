@@ -11,7 +11,7 @@ const routesMiddleware = require('next-routes-middleware')
 const port = parseInt(process.env.PORT, 10) || 3000
 const {join} = require('path')
 const currentPath = process.cwd()
-const config = require(join(currentPath, 'now.dev.json'))
+const config = require(join(currentPath, 'now.config.js'))
 app.prepare().then(() => {
   const server = express()
   routesMiddleware({server, app, config, prefix})
