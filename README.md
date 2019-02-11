@@ -1,6 +1,6 @@
 ## Now Dev CLI
 
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.2.3&x2=0)](https://www.npmjs.com/package/now-dev-cli)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=1.2.4&x2=0)](https://www.npmjs.com/package/now-dev-cli)
 
 A development server for Now V2 (for NextJS applications)
 
